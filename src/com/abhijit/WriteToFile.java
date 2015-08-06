@@ -116,7 +116,7 @@ public class WriteToFile {
 			}
 			
 			//Fetch customer ids
-			rset = hiveConn.createStatement().executeQuery("SELECT ID FROM VTRAK_CUSTOMER");
+			rset = hiveConn.createStatement().executeQuery("SELECT ID FROM CUSTOMER");
 
 			while( rset.next() ) {
 				lstCustomers.add( rset.getString( 1 ) );
